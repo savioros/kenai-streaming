@@ -15,8 +15,6 @@ function Profiles() {
 
                 <UserList>
                     <User/>
-                    <User/>
-                    <User/>
                 </UserList>
 
                 <AddUser href="#">Adicionar perfil</AddUser>

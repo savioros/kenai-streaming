@@ -34,4 +34,21 @@ export const UserCard = styled.li`
     &:hover{
         transform: scale(1.05, 1.05);
     }
+
+    @media(max-width: 900px){
+        div{
+            width: 120px;
+            height: 120px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+    }
+
+    @media(max-width: 450px){
+        &{
+            gap: 26px;
+        }
+    }
 `

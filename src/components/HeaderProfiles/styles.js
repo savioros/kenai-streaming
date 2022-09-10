@@ -12,4 +12,14 @@ export const HeaderContainer = styled.header`
         font-size: 36px;
         line-height: 49px;
     }
+
+    @media(max-width: 700px){
+        &{
+            justify-content: center;
+        }
+
+        span{
+            display: none;
+        }
+    }
 `
