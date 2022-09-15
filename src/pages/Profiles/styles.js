@@ -63,13 +63,13 @@ export const Apresentation = styled.div`
 
         h1{
             font-weight: 400;
-            font-size: 20px;
+            font-size: 26px;
             line-height: 27px;
         }
 
         p{
             font-weight: 300;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 25px;
         }
     }
@@ -103,13 +103,16 @@ export const UserList = styled.ul`
     }
 `
 
-export const AddUser = styled.a`
-    padding: 16px 40px;
-    background-color: #181818;
+export const AddUser = styled.nav`
     margin-top: 108px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
+    
+    a{
+        background-color: #181818;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        padding: 16px 40px;
+    }
 
     @media(max-width: 700px){
         &{

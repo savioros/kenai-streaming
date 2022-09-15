@@ -1,13 +1,13 @@
 import React from 'react'
 import { UserCard } from './styles'
 
-function User() {
+function User({ user, backgroudColor }) {
     return (
-        <UserCard>
+        <UserCard backgroudColor={backgroudColor}>
             <div>
                 <a href="#"></a>
             </div>
-            <p>Sávio Rian</p>
+            <p>{user}</p>
         </UserCard>
     )
 }

@@ -7,6 +7,8 @@ export const HeaderContainer = styled.header`
     padding: 40px;
     
     span{
+        width: 90px;
+        height: 49px;
         color: #fff;
         font-weight: 300;
         font-size: 36px;
