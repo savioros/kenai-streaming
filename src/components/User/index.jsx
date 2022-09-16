@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../../Contexts/UserContext'
 import { UserCard } from './styles'
 
-function User({ user, backgroudColor }) {
+function User({ user }) {
+    const { profileLogin } = useContext(UserContext)
+
     return (
-        <UserCard backgroudColor={backgroudColor}>
-            <div>
-                <a href="#"></a>
-            </div>
+        <UserCard>
+            <button onClick={() => profileLogin(user)}></button>
             <p>{user}</p>
         </UserCard>
     )

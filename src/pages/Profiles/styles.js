@@ -5,12 +5,21 @@ export const Container = styled.main`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 129px);
+    /* height: calc(100vh - 129px); */
+    height: 100%;
+    padding: 0 0 60px 0;
     color: #F9F9F9;
     
     @media(max-width: 700px){
         &{
             justify-content: space-around;
+            /* height: 100%; */
+        }
+    }
+
+    @media(max-width: 450px){
+        &{
+            gap: 100px;
         }
     }
 `
@@ -92,7 +101,7 @@ export const UserList = styled.ul`
 
     @media(max-width: 700px){
         &{
-            margin-top: 80px;
+            margin-top: 100px;
         }
     }
 
@@ -116,11 +125,12 @@ export const AddUser = styled.nav`
 
     @media(max-width: 700px){
         &{
-            margin-top: 50px;
+            margin-top: 100px;
+            margin-bottom: 50px;
         }
     }
 
-    @media(max-width: 450px){
+    @media(max-width: 485px){
         &{
             margin-top: 30px;
         }

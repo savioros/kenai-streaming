@@ -10,19 +10,19 @@ export const UserCard = styled.li`
     color: #A8A8A8;
     transition: .2s ease-out;
 
-    div{
+    button{
         background-color: #fff;
         width: 176px;
         height: 176px;
         border-radius: 50%;
         position: relative;
 
-        a{
+        /* a{
             position: absolute;
             border-radius: 50%;
             width: 100%;
             height: 100%;
-        }
+        } */
     }
     
     p{

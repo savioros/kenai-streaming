@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Link, useNavigate  } from 'react-router-dom'
 import Button from '../../components/Button'
+import HeaderProfiles from '../../components/HeaderProfiles'
 import { UserContext } from '../../Contexts/UserContext'
 import { Container, Form, Title, User } from './styles'
 
@@ -25,6 +26,7 @@ function NewProfile() {
 
     return (
         <>
+            <HeaderProfiles/>
             <Container>
                 <Title>Criar perfil</Title>
                 <User/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
+import Home from './pages/Home'
 import Layout from './pages/Layout'
 import NewProfile from './pages/NewProfile'
 import NotFound from './pages/NotFound'
@@ -11,6 +12,7 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route path='' element={<Profiles/>}/>
+                    <Route path='home' element={<Home/>}/>
                     <Route path='newProfile' element={<NewProfile/>}/>
                 </Route>
                 <Route path='*' element={<NotFound/>}/>
