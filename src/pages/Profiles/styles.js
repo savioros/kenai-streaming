@@ -5,7 +5,6 @@ export const Container = styled.main`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* height: calc(100vh - 129px); */
     height: 100%;
     padding: 0 0 60px 0;
     color: #F9F9F9;
@@ -13,7 +12,6 @@ export const Container = styled.main`
     @media(max-width: 700px){
         &{
             justify-content: space-around;
-            /* height: 100%; */
         }
     }
 
