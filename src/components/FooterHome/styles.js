@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.footer`
+export const FooterContainer = styled.footer`
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 40px;
+    margin-top: 90px;
 
     ul{
         display: flex;
@@ -14,12 +14,15 @@ export const HeaderContainer = styled.footer`
     }
 
     @media(max-width: 800px){
-        &{
-            justify-content: center;
-        }
+        justify-content: center;
+        margin-top: 40px;
 
         div{
             display: none;
         }
+    }
+
+    @media(max-width: 500px){
+        margin-top: 0;
     }
 `

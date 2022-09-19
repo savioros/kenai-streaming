@@ -50,6 +50,7 @@ export const Form = styled.form`
         line-height: 27px;
         width: 400px;
         padding: 15px;
+        color: #000;
     }
 
     div{

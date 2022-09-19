@@ -3,11 +3,11 @@ import Logo from '../../assets/images/KenaiFooter.svg'
 import Instagram from '../../assets/icons/instagram.svg'
 import Twitter from '../../assets/icons/twitter.svg'
 import Facebook from '../../assets/icons/facebook.svg'
-import { HeaderContainer } from './styles'
+import { FooterContainer } from './styles'
 
 function FooterHome() {
     return (
-        <HeaderContainer>
+        <FooterContainer>
             <div>
                 <img src={Logo} alt="Logo Kenai" />
             </div>
@@ -19,7 +19,7 @@ function FooterHome() {
                     <li><img src={Facebook} alt="" /></li>
                 </ul>
             </nav>
-        </HeaderContainer>
+        </FooterContainer>
     )
 }
 

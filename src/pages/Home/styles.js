@@ -5,12 +5,15 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media(max-width: 500px){
+        background-image: url(${(props) => props.imageMobile});
+    }
 `
 
 export const Content = styled.main`
     width: 100%;
     height: 100%;
-    height: 1000px;
 `
 
 export const SinopsePoster = styled.div`
@@ -37,6 +40,7 @@ export const SinopsePoster = styled.div`
     }
 
     p{
+        max-width: 50ch;
         font-weight: 400;
         font-size: 20px;
         line-height: 28px;
@@ -52,6 +56,28 @@ export const SinopsePoster = styled.div`
         border-radius: 4px; 
         margin-top: 30px;
     }
+
+    @media(max-width: 800px){
+        padding: 24px;
+    }
+
+    @media(max-width: 500px){
+        gap: 16px;
+        margin-top: 30px;
+
+        p{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 140%;
+        }
+
+        a{
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
 `
 
 export const Movies = styled.div`
@@ -59,4 +85,8 @@ export const Movies = styled.div`
     display: flex;
     flex-direction: column;
     gap: 80px;
+
+    @media(max-width: 800px){
+        padding: 24px;
+    }
 `

@@ -3,9 +3,11 @@ import FooterHome from '../../components/FooterHome'
 import HeaderHome from '../../components/HeaderHome'
 import { UserContext } from '../../Contexts/UserContext'
 import Poster from '../../assets/images/poster.png'
+import PosterMobile from '../../assets/images/posterMobile.png'
 import { Container, Content, Movies, SinopsePoster } from './styles'
 import API_KEY from '../../services/apikey'
 import Row from '../../components/Row'
+import api from '../../services/api'
 
 const rows = [
     {
@@ -18,7 +20,7 @@ function Home() {
     const { profileSelected } = useContext(UserContext)
 
     return (
-        <Container image={Poster}>
+        <Container image={Poster} imageMobile={PosterMobile}>
             <HeaderHome/>
 
             <Content>
@@ -26,11 +28,11 @@ function Home() {
                     <span>Ação</span>
                     <h2>Batman</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> 
-                        Sed dictum convallis turpis, nec rutrum quam vulputate <br/> 
-                        viverra. Proin ornare dolor sit amet laoreet dignissim. 
+                        Com a ajuda de Jim Gordon e Harvey Dent, Batman tem mantido a ordem na cidade de Gotham. 
+                        Mas um jovem e anárquico criminoso conhecido como Coringa ganha força e decide instaurar um 
+                        verdadeiro caos na cidade. 
                     </p>
-                    <a href="#">Assistir agora</a>
+                    <a href="https://www.youtube.com/watch?v=q8ncjHylG6c" target="_blank">Assistir agora</a>
                 </SinopsePoster>
 
                 <Movies>
@@ -40,7 +42,7 @@ function Home() {
                 </Movies>
             </Content>
 
-            {/* <FooterHome/> */}
+            <FooterHome/>
         </Container>
     )
 }

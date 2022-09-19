@@ -18,34 +18,32 @@ export const HeaderContainer = styled.header`
     }
 
     @media(max-width: 800px){
+        padding: 24px;
+        
         button{
             display: block;
         }
 
         ul{
-            display: block;
+            display: none;
             position: absolute;
-            width: 100%;
-            top: 100px;
-            right: 0;
+            width: max-content;
+            top: 77px;
+            right: 20px;
             background-color: #121214;
-            height: 0;
+            height: max-content;
             z-index: 1000;
-            padding: 0 40px;
-            transition: .6s ease-out;
-            visibility: hidden;
-            overflow-y: hidden;
+            padding: 20px 40px;
+            transition: .2s ease-out;
+            border-radius: 5px; 
 
             li{
-                padding: 1rem 0;
-                border-bottom: 2px solid rgba(0, 0, 0, .2);
+                padding: .5rem 0;
             }
         }
 
         ul.open{
-            height: calc(100vh - 100px);
-            visibility: visible;
-            overflow-y: auto;
+            display: block;
         }
     }
 `
