@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         /* font-family: 'Mukta', sans-serif; */
         font-family: 'Open Sans', sans-serif;
+        color: #F9F9F9;
     }
 
     body{
@@ -16,6 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     a{
         text-decoration: none;
         color: inherit;
+        display: inline-block;
     }
 
     ul{
