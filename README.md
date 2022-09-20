@@ -24,28 +24,32 @@ This is a project proposed by Iuri Silva. I based on the design he gave me and u
 
 ### 1 - Upon entering, you will see the page to choose profiles
 
-![Homepage image](https://github.com/savioros/advice/blob/main/public/readme/Home.png)
+![profilePage](https://user-images.githubusercontent.com/77650278/191383629-33903f64-2f62-4c3a-afd8-28e205574b51.png)
 
-### 2 - When you press the button you receive an advice.
+### 2 - Create profile page
 
-![Posts](https://github.com/savioros/advice/blob/main/public/readme/Advice.png)
+![newProgilePage](https://user-images.githubusercontent.com/77650278/191383651-386b91ba-e220-4de1-aa49-57c451b5b66a.png)
 
-### 3 - It also has a hover effect on the button with a smooth animation :D
+### 3 - When accessing a profile and entering the home page :D
 
-![Post show](https://github.com/savioros/advice/blob/main/public/readme/Advice%20hover.png)
+![homePage](https://user-images.githubusercontent.com/77650278/191383665-ace4c83d-db6d-43a1-8972-e21cc24d328a.png)
 
-### 4 - While the request is being made, there is a load.
+### 4 - By clicking on a movie we can see its information - Desktop
 
-![Post show](https://github.com/savioros/advice/blob/main/public/readme/Loading.png)
+![modalDesktop](https://user-images.githubusercontent.com/77650278/191383675-d407d08f-4037-4715-bb5b-b46bda3ec65f.png)
 
-### 5 - And this is the mobile version.
+### 5 - Home page in its mobile version
 
-![Post show](https://github.com/savioros/advice/blob/main/public/readme/Mobile.png)
+![mobileHomePage](https://user-images.githubusercontent.com/77650278/191383696-6399a000-7f12-4116-b217-19bef860cda5.png)
+
+### 6 - By clicking on a movie we can see its information - Mobile
+
+![modalMobile](https://user-images.githubusercontent.com/77650278/191383706-8afcc8f6-9464-4175-8aaa-56c58abd4fd8.png)
 
 
 ## Links
-  - Deploy on Netlify: https://bestadvice.netlify.app/
-  - Repository: https://github.com/savioros/advice
+  - Deploy on Netlify: https://skenai.netlify.app/
+  - Repository: https://github.com/savioros/kenai-streaming
 
   ## Versioning
 
