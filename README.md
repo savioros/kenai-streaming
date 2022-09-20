@@ -7,18 +7,22 @@ Here are the technologies used in this project.
 
 * ReactJS
 * React Hooks
+* Context API
+* Axios
+* Styled Components
 
 ## Services Used
 
 * Github
 * Netlify
+* API Themoviedb
 
 ## Project description
-This is a Front End Mentor project. I was based on the design they provided me and I used the API from https://api.adviceslip.com/ to get the advice. I used some Hooks techniques, to do the "loading" while the request is processed and to render the component when the request is finished.
+This is a project proposed by Iuri Silva. I based on the design he gave me and used the API from https://www.themoviedb.org/ to get the movie list. I used some techniques from Hooks, ContextAPI, Axios to make the request and Styled Components to style the application.
 
 ## Project images
 
-### 1 - When you access, you will see the Home page <3
+### 1 - Upon entering, you will see the page to choose profiles
 
 ![Homepage image](https://github.com/savioros/advice/blob/main/public/readme/Home.png)
 
