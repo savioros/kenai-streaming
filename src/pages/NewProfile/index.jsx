@@ -7,6 +7,7 @@ import { Container, Form, Title, User } from './styles'
 
 function NewProfile() {
     const [inputValue, setInputValue] = useState('')
+    const [errorInput, setErrorInput] = useState(false)
     const { users, setUsers } = useContext(UserContext)
     const navigate = useNavigate()
 
@@ -18,9 +19,11 @@ function NewProfile() {
     function addNewProfile(e){
         e.preventDefault()
         
-        if(inputValue) {
+        if(inputValue.length > 0 && !inputValue.startsWith(' ')) {
             setUsers([...users, inputValue])
             navigate('/')
+        }else{
+            setErrorInput(true)
         }
     }
 
@@ -32,6 +35,8 @@ function NewProfile() {
                 <User/>
                 <Form onSubmit={addNewProfile}>
                     <input 
+                        className={errorInput ? 'error' : ''}
+                        onBlur={errorInput ? 'error' : ''}
                         type="text" 
                         placeholder='Name' 
                         value={inputValue} 

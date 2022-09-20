@@ -51,6 +51,14 @@ export const Form = styled.form`
         width: 400px;
         padding: 15px;
         color: #000;
+
+        &.error{
+            border: 2px solid red;
+        }
+
+        &:focus{
+            outline: 0;
+        }
     }
 
     div{
