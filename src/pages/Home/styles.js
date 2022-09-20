@@ -56,6 +56,11 @@ export const SinopsePoster = styled.div`
         background: #FFA634;
         border-radius: 4px; 
         margin-top: 30px;
+        transition: .2s ease-out;
+
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
     }
 
     @media(max-width: 800px){

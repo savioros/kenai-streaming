@@ -15,6 +15,7 @@ export const HeaderContainer = styled.header`
 
     button{
         display: none;
+        background-color: transparent;
     }
 
     @media(max-width: 800px){
