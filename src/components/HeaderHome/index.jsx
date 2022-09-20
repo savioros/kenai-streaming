@@ -27,11 +27,11 @@ function HeaderHome() {
                 </button>
 
                 <ul className={menuMobile ? 'open' : ''}>
-                    <li><img src={Search} alt="" /></li>
+                    <li><a href="#"><img src={Search} alt="" /></a></li>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Minha Lista</a></li>
-                    <li><img src={Bell} alt="" /></li>
-                    <li><img src={User} alt="" /></li>
+                    <li><a href="#"><img src={Bell} alt="" /></a></li>
+                    <li><a href="#"><img src={User} alt="" /></a></li>
                 </ul>
             </nav>
         </HeaderContainer>

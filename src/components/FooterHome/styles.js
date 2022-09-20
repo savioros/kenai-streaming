@@ -11,6 +11,10 @@ export const FooterContainer = styled.footer`
         align-items: center;
         gap: 80px;
         color: #F9F9F9;
+
+        li{
+            cursor: pointer;
+        }
     }
 
     @media(max-width: 800px){
