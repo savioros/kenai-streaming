@@ -16,7 +16,7 @@ function Modal({ setModal, previewMovie }) {
                 <Description>
                     <div>
                         <h2>{previewMovie.title || previewMovie.name}</h2>
-                        <span>Nota: {previewMovie.vote_average}</span>
+                        <span>Nota: {(previewMovie.vote_average).toFixed(1)}</span>
                     </div>
                     <p>{previewMovie.overview}</p>
                 </Description>
