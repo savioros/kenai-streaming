@@ -35,15 +35,26 @@ export const HeaderContainer = styled.header`
             z-index: 1000;
             padding: 20px 40px;
             transition: .2s ease-out;
-            border-radius: 5px; 
+            border-radius: 5px;
+            opacity: 0;
+            transform: scale(.8);
+            animation: scaleUp .4s forwards;
 
             li{
                 padding: .5rem 0;
+            }
+
+            @keyframes scaleUp{
+                to{
+                    opacity: initial;
+                    transform: initial;
+                }
             }
         }
 
         ul.open{
             display: block;
+            text-align: center;
         }
     }
 `
