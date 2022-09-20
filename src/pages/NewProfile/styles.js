@@ -26,7 +26,7 @@ export const User = styled.div`
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #fff /* ${(props) => props.backgroudColor} */;
+    background-color: ${(props) => props.colorImage};
     margin-top: 100px;
 
     @media(max-width: 700px){

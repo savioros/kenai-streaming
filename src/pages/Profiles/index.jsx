@@ -8,6 +8,8 @@ import { AddUser, Apresentation, Container, UserList } from './styles'
 function Profiles() {
     const { users } = useContext(UserContext)
 
+    console.log(users)
+
     return (
         <>
             <HeaderProfiles/>
@@ -18,8 +20,8 @@ function Profiles() {
                 </Apresentation>
 
                 <UserList>
-                    {users.map((user, index) => (
-                        <User key={index} user={user}/>
+                    {users.map(({ name, colorProfile }, index) => (
+                        <User key={index} user={name} colorProfile={colorProfile}/>
                     ))}
                 </UserList>
 

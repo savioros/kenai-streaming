@@ -11,18 +11,11 @@ export const UserCard = styled.li`
     transition: .2s ease-out;
 
     button{
-        background-color: #fff;
+        background-color:  ${(props) => props.colorImage};
         width: 176px;
         height: 176px;
         border-radius: 50%;
         position: relative;
-
-        /* a{
-            position: absolute;
-            border-radius: 50%;
-            width: 100%;
-            height: 100%;
-        } */
     }
     
     p{
