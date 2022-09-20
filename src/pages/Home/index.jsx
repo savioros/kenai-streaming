@@ -5,15 +5,13 @@ import { UserContext } from '../../Contexts/UserContext'
 import Poster from '../../assets/images/poster.png'
 import PosterMobile from '../../assets/images/posterMobile.png'
 import { Container, Content, Movies, SinopsePoster } from './styles'
-import API_KEY from '../../services/apikey'
 import Row from '../../components/Row'
-import api from '../../services/api'
 import Modal from '../../components/Modal'
 
 const rows = [
     {
         title: 'Populares',
-        path: `trending/all/week?api_key=${API_KEY}&language=pt-BR`
+        path: `trending/all/week?api_key=${process.env.REACT_APP_SECRET_KEY}&language=pt-BR`
     }
 ]
 
