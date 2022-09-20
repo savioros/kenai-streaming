@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import FooterHome from '../../components/FooterHome'
 import HeaderHome from '../../components/HeaderHome'
 import { UserContext } from '../../Contexts/UserContext'
@@ -8,6 +8,7 @@ import { Container, Content, Movies, SinopsePoster } from './styles'
 import API_KEY from '../../services/apikey'
 import Row from '../../components/Row'
 import api from '../../services/api'
+import Modal from '../../components/Modal'
 
 const rows = [
     {
@@ -17,6 +18,8 @@ const rows = [
 ]
 
 function Home() {
+    const [modal, setModal] = useState(false)
+    const [previewMovie, setPreviewMovie] = useState({})
     const { profileSelected } = useContext(UserContext)
 
     return (
@@ -37,12 +40,13 @@ function Home() {
 
                 <Movies>
                     {rows?.map(({title, path}, index) => (
-                        <Row key={index} title={title} path={path}/>
+                        <Row key={index} title={title} path={path} setModal={setModal} setPreviewMovie={setPreviewMovie}/>
                     ))}
                 </Movies>
             </Content>
 
             <FooterHome/>
+            {modal && <Modal setModal={setModal} previewMovie={previewMovie}/>}
         </Container>
     )
 }

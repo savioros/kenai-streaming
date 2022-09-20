@@ -5,6 +5,7 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 
     @media(max-width: 500px){
         background-image: url(${(props) => props.imageMobile});

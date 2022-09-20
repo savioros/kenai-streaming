@@ -3,8 +3,9 @@ import api from '../../services/api'
 import CardMovie from '../CardMovie'
 import { Container } from './styles'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import Modal from '../Modal'
 
-function Row({ title, path }) {
+function Row({ title, path, setModal, setPreviewMovie }) {
     const [movies, setMovies] = useState([])
     const [scrollX, setScrollX] = useState(0)
 
@@ -48,23 +49,28 @@ function Row({ title, path }) {
     }
 
     return (
-        <Container>
-            <h2>{title}</h2>
-            <div className='arrowLeft' onClick={handleLeftArrow}>
-                <IoIosArrowBack fontSize={50}/>
-            </div>
-            <div className='arrowRight' onClick={handleRightArrow}>
-                <IoIosArrowForward fontSize={50}/>
-            </div>
-            <ul style={{marginLeft: scrollX}}>
-                {movies?.map(({ id, poster_path }) => (
-                    <li key={id}>
-                        <CardMovie pathImage={poster_path}/>
-                        <div></div>
-                    </li>
-                ))}
-            </ul>
-        </Container>
+        <>
+            <Container>
+                <h2>{title}</h2>
+                <div className='arrowLeft' onClick={handleLeftArrow}>
+                    <IoIosArrowBack fontSize={50}/>
+                </div>
+                <div className='arrowRight' onClick={handleRightArrow}>
+                    <IoIosArrowForward fontSize={50}/>
+                </div>
+                <ul style={{marginLeft: scrollX}}>
+                    {movies?.map((movie) => (
+                        <li key={movie.id} onClick={() => {
+                            setModal(true) 
+                            setPreviewMovie(movie)
+                        }}>
+                            <CardMovie pathImage={movie.poster_path}/>
+                            <div></div>
+                        </li>
+                    ))}
+                </ul>
+            </Container>
+        </>
     )
 }
 
