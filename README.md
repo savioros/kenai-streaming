@@ -1,5 +1,6 @@
 ## By Sávio Rian
-This is a simple project with react where the user gets advice
+
+Kenai is a fake streaming service, made with ReactJS and some more powerful libs
 
 ## Technology 
 
